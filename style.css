@@ -14,7 +14,7 @@ body {
 .calcContainer {
     background-color: hsl(0, 0%, 75%);
     margin: auto auto;
-    border: 1px solid black;
+    border: 3px solid black;
     height: 750px;
     display: flex;
     flex-wrap: wrap;
@@ -28,12 +28,11 @@ body {
 .result {
     background-color: hsl(0, 0%, 10%);
     color: green;
-    height: 1.25em;
-    border: 1px solid green;
+    padding: 10px;
+    border: 2px solid green;
     font-size: 5em;
     text-align: end;
     width: 100%;
-    height: auto;
 }
 
 .firstRow {
