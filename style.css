@@ -1,0 +1,64 @@
+:root {
+    --button-width: 28%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calcContainer {
+    background-color: hsl(0, 0%, 75%);
+    margin: auto auto;
+    border: 1px solid black;
+    height: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    aspect-ratio: 4 / 6;
+    gap: 10px;
+}
+
+.result {
+    background-color: hsl(0, 0%, 10%);
+    color: green;
+    height: 1.25em;
+    border: 1px solid green;
+    font-size: 5em;
+    text-align: end;
+    width: 100%;
+    height: auto;
+}
+
+.firstRow {
+    height: 75px;
+    flex: 0 1 calc(var(--button-width) - 10px);
+}
+
+.lastInRow {
+    flex: 0 1 calc(100% - 3 * var(--button-width));
+}
+
+.number {
+    flex: 0 1 calc(var(--button-width) - 10px);
+}
+
+.nextRows {
+    height: 120px;
+}
+
+.zero {
+    flex: 1;
+}
+
+button {
+    font-size: 2em;
+    background-color: hsl(0, 0%, 50%);
+    color: hsl(0, 100%, 50%);
+}
