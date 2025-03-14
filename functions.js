@@ -50,6 +50,8 @@ backspace.addEventListener("click", () => {
 plusminus.addEventListener("click", () => {
     if (display.textContent.length <= 11) {
         display.textContent = -display.textContent;
+    } else if (display.textContent.slice(0, 1) == "-") {
+        display.textContent = -display.textContent;
     }
 });
 
